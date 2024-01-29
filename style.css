@@ -1,0 +1,250 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+
+
+
+
+.body-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main {
+    text-align: center;
+    border: 2px solid limegreen;
+    box-shadow: 0 0 20px limegreen;
+    padding: 130px;
+    border-radius: 20px;
+}
+
+@media (max-width:800px) {
+    .Main {
+        padding: 80px;
+    }
+}
+
+@media (max-width:400px) {
+    .Main {
+        padding: 50px;
+    }
+}
+
+.question-inner {
+    font-family: 'Poppins', sans-serif;
+}
+
+.answers1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.answers2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.answers3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.answers4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.answers5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.answers6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.answer1 {
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.answer1:hover {
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 10px limegreen;
+}
+
+.answer2 {
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.answer2:hover {
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 10px limegreen;
+}
+
+.answer3 {
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.answer3:hover {
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 10px limegreen;
+}
+
+.answer4 {
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.answer4:hover {
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 10px limegreen;
+}
+
+.next-question {
+    display: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.retry-question, .retry-question2, .retry-question3, .retry-question4, .retry-question5, .retry-question6 {
+    display: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body-style2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.body-style3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.body-style4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.body-style5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.body-style6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.right-wrong {
+    display: flex;
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+}
+
+.Green {
+    color: rgb(2, 180, 2);
+}
+
+.Red {
+    color: red;
+}
+
+
+.texty {
+    display: none;
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100px;
+}
+
+.troll .answer1 {
+    position: relative;
+    text-align: center;
+}
+
+.troll .corr {
+    position: absolute;
+    top: 20%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.troll .wrong-ans {
+    display: none;
+}
+
+.wrong-ans {
+    position: absolute;
+    bottom: -22%;
+    right: 0.5%;
+    text-align: center;
+}
+
+
+
+

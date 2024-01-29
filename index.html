@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Simple Quiz!</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="Main">
+
+        <div class="body-style">
+
+            <h1 class="question-inner">
+                What is 2+2?
+            </h1>
+
+            <div class="answers1">
+                <button class="answer1" onclick="wrongAnswer(this)">1</button>
+                <button class="answer2" onclick="wrongAnswer(this)">2</button>
+                <button class="answer3" onclick="wrongAnswer(this)">3</button>
+                <button class="answer4" onclick="showCorrectAnswer(this)">4</button>
+            </div>
+
+            <p class="next-question" id="nextQuestion" onclick="nextQuestion()"></p>
+            <p class="retry-question" id="retryQuestion" onclick="retry()"></p>
+        </div>
+
+        <div class="body-style2">
+
+            <h1 class="question-inner">
+                Capital of France
+            </h1>
+
+            <div class="answers2">
+                <button class="answer1" onclick="wrongAnswer2(this)">London</button>
+                <button class="answer2" onclick="wrongAnswer2(this)">Berlin</button>
+                <button class="answer3" onclick="showCorrectAnswer2(this)">Paris</button>
+                <button class="answer4" onclick="wrongAnswer2(this)">Bucharest</button>
+            </div>
+
+            <p class="next-question" id="nextQuestion2" onclick="nextQuestion2()"></p>
+            <p class="retry-question2" id="retryQuestion2" onclick="retry2()"></p>
+        </div>
+
+        <div class="body-style3">
+
+            <h1 class="question-inner">
+                What is the 8th <br> digit of π?
+            </h1>
+
+            <div class="answers3">
+                <button class="answer1" onclick="wrongAnswer3(this)">Madagascar</button>
+                <button class="answer2" onclick="wrongAnswer3(this)">2</button>
+                <button class="answer3" onclick="showCorrectAnswer3(this)">6</button>
+                <button class="answer4" onclick="wrongAnswer3(this)">yes</button>
+            </div>
+
+            <p class="next-question" id="nextQuestion3" onclick="nextQuestion3()"></p>
+            <p class="retry-question3" id="retryQuestion3" onclick="retry3()"></p>
+        </div>
+
+
+        <div class="body-style4">
+
+            <h1 class="question-inner">
+                What year was <br> this quiz created?
+            </h1>
+
+            <div class="answers4">
+                <button class="answer1" onclick="showCorrectAnswer4(this)">44.98888 <br>751680797 <sup>2</sup></button>
+                <button class="answer2" onclick="wrongAnswer4(this)">3 B.C</button>
+                <button class="answer3" onclick="wrongAnswer4(this)">2003</button>
+                <button class="answer4" onclick="wrongAnswer4(this)">31.811947 <br>44117373 <sup>2</sup></button>
+            </div>
+
+            <p class="next-question" id="nextQuestion4" onclick="nextQuestion4()"></p>
+            <p class="retry-question4" id="retryQuestion4" onclick="retry4()"></p>
+        </div>
+
+
+        <div class="body-style5">
+
+            <h1 class="question-inner">
+                Which programming <br> language is the oldest?
+            </h1>
+
+            <div class="answers5">
+                <button class="answer1" onclick="wrongAnswer5(this)">HTML</button>
+                <button class="answer2" onclick="showCorrectAnswer5(this)">FORTRAN</button>
+                <button class="answer3" onclick="wrongAnswer5(this)">JavaScript</button>
+                <button class="answer4" onclick="wrongAnswer5(this)">Assembly</button>
+            </div>
+
+            <p class="next-question" id="nextQuestion5" onclick="nextQuestion5()"></p>
+            <p class="retry-question5" id="retryQuestion5" onclick="retry5()"></p>
+        </div>
+
+        <div class="body-style6">
+
+            <h1 class="question-inner">
+                How many notes <br> are in one octave?
+            </h1>
+
+            <div class="answers6">
+                <div class="troll">
+                    <button class="answer1" onclick="wrongAnswer6(this)" onmouseover="trollAnswer()"
+                        onmouseout="showCorrect()">
+                        <p class="corr">4</p>
+                        <p class="wrong-ans">Wrong answer</p>
+                    </button>
+                </div>
+                <button class="answer2" onclick="wrongAnswer6(this)">2</button>
+                <button class="answer3" onclick="showCorrectAnswer6(this)">8</button>
+                <a href="trolled.html">
+                    <button class="answer4" onclick="wrongAnswer6(this)">7</button>
+                </a>
+            </div>
+
+            <p class="next-question" id="nextQuestion6" onclick="nextQuestion6()"></p>
+            <p class="retry-question6" id="retryQuestion6" onclick="retry6()"></p>
+        </div>
+
+    </div>
+
+
+
+
+    </div>
+
+    <div class="right-wrong">
+        <h3 class="Green" id="correctCount"></h3>
+        <h3 class="Red" id="wrongCount"></h3>
+    </div>
+
+    <audio src="Sounds/Dj Air Horn Sound Effects.mp3"></audio>
+
+    <h1 class="texty">HOW CAN YOU BE SO DUMB??</h1>
+
+    <script src="main.js"></script>
+
+    <script>
+        // document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+</body>
+
+</html>
